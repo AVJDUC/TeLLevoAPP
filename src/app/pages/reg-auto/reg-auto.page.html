@@ -1,9 +1,38 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>regAuto</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Registro</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Marca</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
 
+    <ion-item lines="full">
+      <ion-label position="floating">Modelo</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Año del Modelo</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Patente</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="danger" expand="block">Registrar Auto</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
 </ion-content>
