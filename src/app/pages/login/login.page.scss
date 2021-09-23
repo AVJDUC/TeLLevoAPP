@@ -1,5 +1,5 @@
-#form-log {
-    margin-top: 20%;
+.backgrnd {
+    background-color: #022e55;
 }
 
 .divider {
@@ -27,6 +27,14 @@
     &:after {
         background: #cccccc;
     }
+}
+
+#label {
+    color: #020814;
+}
+
+#form-log {
+    margin-top: 20%;
 }
 
 #btn-log {

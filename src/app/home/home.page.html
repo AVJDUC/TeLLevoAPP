@@ -10,25 +10,25 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  
-  <div class="title">
-    <ion-title>
-      <ion-label>
-        <h1>Bienvenido</h1>
-        
-        <p *ngIf="usuario">Usuario: {{usuario}}</p>
-        
-      </ion-label>
-    </ion-title>
+  <div class="backgrnd">
+    <div class="title">
+      <ion-title>
+        <ion-label>
+          <h1>Bienvenido</h1>
+          
+          <p *ngIf="usuario">Usuario: {{usuario}}</p>
+          
+        </ion-label>
+      </ion-title>
+    </div>
+    
+    
+    
+    
+    <div class="btn-home">
+      <ion-button expand="block" shape="round" color="primary" id="btn-h" >Buscar Viaje</ion-button>
+      <ion-button expand="block" shape="round" color="secondary" id="btn-h" [routerLink]="['/reg-auto']">Registrar Auto</ion-button>
+    </div>
   </div>
-  
-  
-  
-  
-  <div class="btn-home">
-    <ion-button expand="block" shape="round" color="primary" id="btn-h" >Buscar Viaje</ion-button>
-    <ion-button expand="block" shape="round" color="secondary" id="btn-h" [routerLink]="['/reg-auto']">Registrar Auto</ion-button>
-  </div>
-  
 
 </ion-content>

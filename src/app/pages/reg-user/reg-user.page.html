@@ -8,23 +8,31 @@
 </ion-header>
 
 <ion-content>
-  <div class="form">
-    <ion-item lines="full">
-      <ion-label position="floating">Usuario</ion-label>
-      <ion-input type="text" [(ngModel)]="usuario" maxlength="12" required></ion-input>
-    </ion-item>
-      
-    <ion-item lines="full">
-      <ion-label position="floating">Contraseña</ion-label>
-      <ion-input type="password" [(ngModel)]="password" maxlength="8" required></ion-input>
-    </ion-item>
+  <div class="backgrnd">
+  
+    <div id="div-logo">
+        <center>
+          <img src="../../assets/img/logo.jpg" id="logo">
+        </center>
+    </div>
 
-    <ion-row>
-      <ion-col>
-        <ion-button (click)="registro()" color="success" shape="rounded" expand="block" id="btn-reg" >Registrarme</ion-button>
-      </ion-col>
-    </ion-row>
-  </div>
-    
+    <div class="form">
+      <ion-item lines="full">
+        <ion-label position="floating">Usuario</ion-label>
+        <ion-input type="text" [(ngModel)]="usuario" maxlength="12" required></ion-input>
+      </ion-item>
+        
+      <ion-item lines="full">
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input type="password" [(ngModel)]="password" maxlength="8" required></ion-input>
+      </ion-item>
+
+      <ion-row>
+        <ion-col>
+          <ion-button (click)="registro()" color="success" shape="rounded" expand="block" id="btn-reg" >Registrarme</ion-button>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div> 
   
 </ion-content>

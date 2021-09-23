@@ -8,8 +8,16 @@
 </ion-header>
 
 <ion-content>
-  <div class="form">
-    <ion-item lines="full">
+  <div class="backgrnd">
+    
+    <div id="div-logo">
+      <center>
+        <img src="../../assets/img/logo.jpg" id="logo">
+      </center>
+    </div>
+
+    <div class="form">
+      <ion-item lines="full">
         <ion-label position="floating">Usuario</ion-label>
         <ion-input type="text" [(ngModel)]="Usuario" required></ion-input>
       </ion-item>
@@ -23,7 +31,9 @@
       <small>
         Por favor ingrese el nombre de usuario utilizado al momento de su registro.
       </small>
+    </div>
   </div>
+  
     
   
 </ion-content>
