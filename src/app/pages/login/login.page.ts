@@ -45,4 +45,10 @@ export class LoginPage implements OnInit {
     toast.present();
   }
 
+  clickedNew(){
+
+    this.router.navigate(['/reg-user']);
+  }
 }
+
+

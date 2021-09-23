@@ -1,7 +1,15 @@
 <ion-header>
   <ion-toolbar>
     
-    <ion-title>Inicio Sesión</ion-title>
+    <ion-title slot="start">Inicio Sesión</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="clickedNew()">
+        <ion-icon class="ion-padding-top" slot="icon-only" name="person-add"></ion-icon>
+        <ion-icon ></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
   </ion-toolbar>
 </ion-header>
 
