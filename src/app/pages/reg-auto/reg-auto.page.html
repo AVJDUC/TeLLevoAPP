@@ -1,13 +1,13 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>Registro</ion-title>
+    <ion-title>Registro Vehiculo</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="content">
   <div class="fm-reg-auto">
     <ion-item lines="full">
       <ion-label position="floating">Marca</ion-label>
@@ -37,13 +37,14 @@
     <ion-grid id="btn-rauto">
     <ion-row>
       <ion-col col-6>
-        <ion-button shape="block" color="danger" (click)="limpiar()">
-          Limpiar
+        <ion-button expand="block" shape="rounded" color="primary" (click)="regAuto()">
+          Registrar Auto
         </ion-button>
       </ion-col>
+      
       <ion-col col-6>
-        <ion-button shape="block" color="primary" (click)="mostrar()">
-          Registrar Auto
+        <ion-button expand="block" shape="rounded" color="danger" (click)="limpiar()">
+          Limpiar
         </ion-button>
       </ion-col>
     </ion-row>
